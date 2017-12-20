@@ -392,7 +392,7 @@ class Tower(BaseTower):
                 if ans is not None:
                     y[i, j] = ans
                     y_mask[i, j]= True
-                    j += 1
+                j += 1
             if self.rnn:
                 y[i, j] = self.num_candidate-1
                 y_mask[i, j] = True
